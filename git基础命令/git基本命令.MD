@@ -8,5 +8,5 @@
 
 #### 3.git remote
 > 为了便于管理，git要求每个远程主机都必须指定一个主机名。git remote命令就用于管理主机名。
-##### (1)git remote
-- 不带选项时，git remote命令列出所有远程主机。
+- git remote
+  - 不带选项时，git remote命令列出所有远程主机。
