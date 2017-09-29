@@ -220,3 +220,50 @@
 | git fast-import | 其他版本库迁移至Git的通用工具 |
 | git svn Git | 作为前端操作 Subversion |
 
+> 9.合并相关的辅助命令
+
+| 命令 | 简要说明 |
+| -------- | -------- |
+| git merge-base | 供其他脚本调用，找到两个或多个提交最近的共同祖先 |
+| git merge-file | 针对文件的两个不同版本执行三向文件合并 |
+| git merge-index | 对index中的冲突文件调用指定的冲突解决工具 |
+| git merge-octopus | 合并两个以上分支。参见 git merge 的octopus合并策略 |
+| git merge-one-file | 由 git merge-index 调用的标准辅助程序 |
+| git merge-ours | 合并使用本地版本，抛弃他人版本。参见 git merge 的ours合并策略 |
+| git merge-recursive | 针对两个分支的三向合并。参见 git merge 的recursive合并策略 |
+| git merge-resolve | 针对两个分支的三向合并。参见 git merge 的resolve合并策略 |
+| git merge-subtree | 子树合并。参见 git merge 的 subtree 合并策略 |
+| git merge-tree | 显式三向合并结果，不改变暂存区 |
+| git fmt-merge-msg | 供执行合并操作的脚本调用，用于创建一个合并提交说明 |
+| git rerere | 重用所记录的冲突解决方案 |
+
+> 10. 杂项
+
+| 命令 | 简要说明 |
+| -------- | -------- |
+| git bisect–helper | 由 git bisect 命令调用，确认二分查找进度 |
+| git check-attr | 显示某个文件是否设置了某个属性 |
+| git checkout-index | 从暂存区拷贝文件至工作区 |
+| git cherry | 查找没有合并到上游的提交 |
+| git diff-files | 比较暂存区和工作区，相当于 git diff –raw |
+| git diff-index | 比较暂存区和版本库，相当于 git diff –cached –raw |
+| git diff-tree | 比较两个树对象，相当于 git diff –raw A B |
+| git difftool–helper | 由 git difftool 命令调用，默认要使用的差异比较工具 |
+| git get-tar-commit-id | 从 git archive 创建的 tar 包中提取提交ID |
+| git gui–askpass | 命令 git gui 的获取用户口令输入界面 |
+| git notes | 提交评论管理 |
+| git patch-id | 补丁过滤行号和空白字符后生成补丁唯一ID |
+| git quiltimport | 将Quilt补丁列表应用到当前分支 |
+| git replace | 提交替换 |
+| git shortlog | 对 git log 的汇总输出，适合于产品发布说明 |
+| git stripspace | 删除空行，供其他脚本调用 |
+| git submodule | 子模组管理 |
+| git tar-tree | 过时命令，请使用 git archive |
+| git var | 显示 Git 环境变量 |
+| git web–browse | 启动浏览器以查看目录或文件 |
+| git whatchanged | 显示提交历史及每次提交的改动 |
+| git-mergetool–lib | 包含于其他脚本中，提供合并/差异比较工具的选择和执行 |
+| git-parse-remote | 包含于其他脚本中，提供操作远程版本库的函数 |
+| git-sh-setup | 包含于其他脚本中，提供 shell 编程的函数库 |
+
+
