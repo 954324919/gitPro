@@ -13,6 +13,8 @@
 
 - Untracked files
   - 该提示是说你在本地添加了新文件，但是该文件git并不知道(该文件还没有add)
+- Changes to be committed
+  - 已经将文件add到暂存区，需要将文件提交到本地仓库(还没有commit)
 - Changes not staged for commit
   - 该提示表示已经执行过add命令，添加到了暂存区，但是这些文件又修改了(没有执行commit)
- 
+- 
