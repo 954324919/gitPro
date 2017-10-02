@@ -17,4 +17,19 @@
   - 已经将文件add到暂存区，需要将文件提交到本地仓库(还没有commit)
 - Changes not staged for commit
   - 该提示表示已经执行过add命令，添加到了暂存区，但是这些文件又修改了(没有执行commit)
-- 
+
+> git暂存区理解及相关问题描述:http://selfcontroller.iteye.com/blog/1786644
+
+#### 3.git rm使用
+
+> 使用rm命令可以执行文件删除并从git仓库管理中移除(注意，最后使用git commit才真正提交到git仓库，git clean是将没有add的文件删除)。
+
+- git rm <文件名>
+  - 删除文件，并从仓库系统中移除。
+- git rm -r <目录名>
+  - 删除文件夹，并从仓库系统中移除。
+- git rm --cached <文件名>
+  - 如果文件已经通过add命令添加到了暂存区(还没有commit)，可以使用--cached命令把文件移除(类似clean命令)。
+#### 注意：对于已经被git rm删除掉（还没被提交）的文件或目录，如果想取消其操作的话，可以首先通过git add -i的子命令revert从索引库中把它们剔除，然后用git checkout <文件>命令来达到取消的目录
+
+
