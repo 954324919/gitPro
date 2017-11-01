@@ -46,7 +46,13 @@
 > 使用git reset将文件从暂存区回退到工作区，进行版本回退
 
 - git reset HEAD filename
-  - 回退文件，将文件从暂存区回退到工作区  //也可以使用git reset filename
+   - 回退文件，将文件从暂存区回退到工作区  //也可以使用git reset filename
 - git reset HEAD^
-  - 回退版本，一个^表示一个版本，可以多个，另外也可以使用 git reset HEAD~n这种形式，表示回退几个版本。如果知道特定的commit-id，可以直接使用git reset commit-id进行回退，实际上使用的默认参数mixed。可以使用git log -3来查看最近三次的提交，形如git log -n，n就是输出的个数，可以看到commit-id，author，date等信息。
- - git添加了
+   - 回退版本，一个^表示一个版本，可以多个，另外也可以使用 git reset HEAD~n这种形式，表示回退几个版本。如果知道特定的commit-id，可以直接使用git reset commit-id进行回退，实际上使用的默认参数mixed。可以使用git log -3来查看最近三次的提交，形如git log -n，n就是输出的个数，可以看到commit-id，author，date等信息。
+ - git reset --soft HEAD~1
+   - 将版本库回退一个版本，将本地版本库的头指针全部重置到指定版本，这次提交之后的所有变更都移动到暂存区。
+- git reset HEAD~1
+  - 不带任何参数其实是默认的mixed参数，将版本库回退1个版本，将本地版本库的头指针全部重置到指定版本，且会重置缓存区，这次提交之后的所有变更都移动到未暂存区
+- git reset --hard HEAD~1
+  - 将版本库回退1个版本，但不仅仅是将本地版本库的头指针全部重置到指定版本，也会重置暂存区，并且会将工作区代码也回退到这个版本。
+#### PS：reset命令参考网址：http://www.cnblogs.com/qianqiannian/p/6010238.html
