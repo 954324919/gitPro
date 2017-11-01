@@ -41,4 +41,11 @@
 - git stash clear
   - 清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了。
 
+#### 5.git reset
 
+> 使用git reset将文件从暂存区回退到工作区，进行版本回退
+
+- git reset HEAD filename
+  - 回退文件，将文件从暂存区回退到工作区  //也可以使用git reset filename
+- git reset HEAD^
+  - 回退版本，一个^表示一个版本，可以多个，另外也可以使用 git reset HEAD~n这种形式，表示回退几个版本。
