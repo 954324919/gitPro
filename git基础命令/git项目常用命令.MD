@@ -49,4 +49,4 @@
   - 回退文件，将文件从暂存区回退到工作区  //也可以使用git reset filename
 - git reset HEAD^
   - 回退版本，一个^表示一个版本，可以多个，另外也可以使用 git reset HEAD~n这种形式，表示回退几个版本。如果知道特定的commit-id，可以直接使用git reset commit-id进行回退，实际上使用的默认参数mixed。可以使用git log -3来查看最近三次的提交，形如git log -n，n就是输出的个数，可以看到commit-id，author，date等信息。
- - git小结
+ - git添加了
