@@ -58,5 +58,8 @@
 - git checkout -b <分支名>
   - 使用该命令会创建新分支，并且同时切换分支。
 
-
+#### git cherry-pick 
+> 可以向其他分支提交代码
+- git cherry-pick <commit id>
+  - 向某个分支提交代码。
 
